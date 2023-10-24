@@ -41,8 +41,9 @@ body {
 /* Container */
 
 .container__heading {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Quicksand';
+    font-weight: bold;
     text-align: center;
     color: #171717;
 }
@@ -122,6 +123,7 @@ body {
 }
 
 .container__post-special-content {
+    color: black;
     padding: 1rem 1.5rem 0;
 }
 
