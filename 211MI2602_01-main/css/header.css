@@ -3,24 +3,13 @@
 }
 
 
-/* socialmed */
-
-.header--left__socialmed {
-    height: 80px;
-    line-height: 144px;
-}
-
-.header--left__socialmed a img {
-    width: 24px;
-    margin-right: 4px;
-}
 
 
 /* search */
 
-.header--left__search {
+.header--center__search {
     position: relative;
-    padding-top: 28px;
+    padding-top: 75px;
 }
 
 .menu--search {
@@ -57,24 +46,24 @@
     color: black;
 }
 
-.header--left__search i {
+.header--center__search i {
     position: absolute;
     margin: 5px;
-    font-size: 18px;
-    color: #c4c4c4c4;
+    font-size: 20px;
+    color: #FFD700;
 }
 
-.header--left__search input {
-    width: 180px;
+.header--center__search input {
+    width: 490px;
     height: 40px;
     margin-left: 4px;
     padding-left: 36px;
     border-radius: 4px;
-    border: 1px solid #c4c4c4c4;
+    border: 1px solid #FFD700;
 }
 
 input[type="text"]::placeholder {
-    font-size: 13px;
+    font-size: 17px;
     color: rgba(0, 0, 0, 0.3);
     font-family: quicksand, sans-serif;
 }
@@ -82,13 +71,13 @@ input[type="text"]::placeholder {
 
 /* search mobile */
 
-.header--left-mobile__search {
+.header--center-mobile__search {
     height: 148px;
     line-height: 148px;
     display: none;
 }
 
-.header--left-mobile__search i {
+.header--center-mobile__search i {
     font-size: 1.45rem;
     color: rgba(0, 0, 0, 0.75);
 }
@@ -96,7 +85,7 @@ input[type="text"]::placeholder {
 
 /* logo */
 
-.header--center {
+.header--left {
     height: 180px;
     background-image: url(../img/homepage/logo.png);
     background-repeat: no-repeat;
@@ -111,13 +100,13 @@ input[type="text"]::placeholder {
     justify-content: end;
     height: 11.25rem;
     line-height: 14rem;
-    margin-right: 0.5rem;
+    margin-right: 7rem;
 }
 
 .header--right a i {
-    font-size: 22px;
+    font-size: 25px;
     padding-left: 20px;
-    color: rgba(0, 0, 0, 0.75);
+    color: #FFD700;
 }
 
 @media (max-width:1023px) {
@@ -130,18 +119,17 @@ input[type="text"]::placeholder {
         height: 128px;
         line-height: 136px;
     }
-    .header--left__socialmed,
     .header--left__search {
         display: none;
     }
-    .header--left-mobile__search {
+    .header--center-mobile__search {
         display: flex;
         justify-content: start;
     }
 }
 
 @media (max-width:575px) {
-    .header--left-mobile__search,
+    .header--center-mobile__search,
     .header--right {
         display: none;
     }
